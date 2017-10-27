@@ -1,0 +1,78 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <div class="box fl"></div>
+            <?php $pid=get_category($_GET['catid'],'pid');?>
+            <p class="fl">{:get_category($pid,'title')}</p>
+            <ul class="fr clearBoth">
+              <?php if($pid==53):?>
+              <?php for($i=67;$i<=68;$i++):?>
+                <li <?php if($_GET['catid']==$i) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></li>
+              <?php endfor;?>
+            <?php else:?>
+              <?php for($i=69;$i<=70;$i++):?>
+                <li <?php if($_GET['catid']==$i) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></li>
+              <?php endfor;?>
+            <?php endif;?>
+
+        </div>
+        <div class="ke-shop clearBoth">
+            <a  class="left fl"><img src="{:get_cover($info['pimage'],$field = path)}"></a>
+            <div class="right fl">
+                <a  class="title">{$info['title']}</a>
+                <p><span>价格：</span><span>¥</span>{$info['price']}<span>元</span></p>
+                <div class="box clearBoth">
+                  <div class="baseReduce fl"><img src="__IMG__/add_09.png"></div>
+                  <input type="text" value="1" class="baseInput fl" datatype="n" nullmsg="请输入购买数量！" errormsg="数量必须为数字！">
+                  <div class="baseAdd fl"><img src="__IMG__/add_06.png"></div>
+              </div>
+               <a href="javascript:;" class="gou" onclick="addcar()">立即购买</a>
+                <!-- <a href="{$info['ljxg']}" class="gou" target="_blank">立即购买</a> -->
+            </div>
+        </div>
+        <ul class="keUl clearBoth">
+            <li class="bg"><a href="javascript:;">产品概述</a></li>
+            <li><a href="javascript:;">产品简介</a></li>
+        </ul>
+        <div class="ke-content">
+            <div>
+              {$info['content']}
+            </div>
+            <div>
+                {$info['introduction']}
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+         function addcar()
+         {
+           var productid="{$info['id']}";//id
+           var image="{$info['pimage']}";//图片
+           var name="{$info['title']}";//名称
+           var num=$('.baseInput').val();//数量
+           var price="{$info['price']}";//单价
+           $.ajax({
+             url:"{:U('User/car','',false)}",
+             type:"GET",
+             data:{"productid":productid,"image":image,"name":name,"num":num,"price":price},
+             dataType:"JSON",
+             success: function(data)
+             {
+               if(data.status==1)
+               //  console.log(data);
+               $.Showmsg("添加成功！");
+               setTimeout(function()
+               {
+                 window.location.href=location.href;
+               },600);
+             }
+           });
+         }
+      </script>
+<include file="Public/footer" />

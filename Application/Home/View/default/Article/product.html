@@ -1,0 +1,30 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <p class="fl">{:get_category($_GET['catid'],'title')}</p>
+        </div>
+        <div class="product-center clearBoth">
+            <a  class="left fl"><img src="{:get_cover($info['product'],'path')}"></a>
+            <div class="right fl">
+                <a href="" class="title">{$info['title']}</a>
+                <div class="text">
+                  {$info['description']}
+                </div>
+                <div class="bot clearBoth">
+                    <a href="{$info['ljxg']}" class="a1 fl">立即购买</a>
+                    <!-- <a href="{$info['xptj']}" class="a2 fl">选配推荐</a> -->
+                    <div class="a2 fl" style="padding-left:20px !important;padding-top:5px !important;">{$info['price']}元起</div>
+                </div>
+            </div>
+        </div>
+        <div class="ke-content product-con">
+            {$info['content']}
+        </div>
+
+    </div>
+</div>
+<include file="Public/footer" />

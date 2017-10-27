@@ -1,0 +1,217 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<form class="registerf" method="post">
+<div class="news-main shop-main">
+    <div class="inner">
+        <ul class="shopUl clearBoth">
+            <li>
+                <label class="option clearBoth">
+                    <input type="checkbox" value="" class="fl">
+                    <p class="fl">全选</p>
+                </label>
+            </li>
+            <li>编号</li>
+            <li>商品名称</li>
+            <li>数量</li>
+            <li>单价（元）</li>
+            <li>操作</li>
+        </ul>
+        <ul class="shopBul">
+          <?php  $num=0;$total=0;?>
+          <?php foreach($data as $v):?>
+            <li class="clearBoth">
+                <div class="box">
+                    <?php $xiaoji=intval($v[price])*intval($v[num]);?>
+                    <div class="title1"><input type="checkbox" checked="checked" value="{$v[name]}"></div>
+                    <div class="title2">{$v[productid]}</div>
+
+                    <div class="title3"><a href="javascript:;"><img src="{:get_cover($v['image'],$field = path)}"></a></div>
+                    <div class="title4"> <a href="javascript:;">{$v[name]}</a></div>
+                    <div class="title5 clearBoth">
+                    <div class="baseReduce fl"><img src="__IMG__/add_09.png"></div>
+                    <input type="text" value="{$v[num]}" class="baseInput fl" datatype="n" nullmsg="请输入购买数量！" errormsg="数量必须为数字！">
+                    <div class="baseAdd fl"><img src="__IMG__/add_06.png"></div>
+                    </div>
+                    <div class="title6">{$v[price]}</div>
+
+                    <input type="hidden" name="xiaoji" class="xiaoji" value="{$xiaoji}">
+                    <div class="title7"><a href="javascript:;" onclick="del({$v[productid]})"><img src="__IMG__/dele_03.png"></a></div>
+                </div>
+            </li>
+            <?php $num+=$v['num'];$total+=$xiaoji;?>
+          <?php endforeach;?>
+          <?php cookie('number',$num,3600*24);?>
+        </ul>
+        <div class="allMoney">
+            <div class="right fr clearBoth">
+                <!-- <div class="title1 fl">合计：</div> -->
+                <div class="title2 fl">数量：<span id="total_num">{$num}</span>件</div>
+                <div class="title2 fl">总价：<span id="total">{$total}</span>元</div>
+                <input type="submit" value="提交" class="fl">
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<script type="text/javascript">
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setDate(exdate.getDate()+expiredays)
+document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+}
+function del(productid)
+{
+  $.ajax({
+    url:"{:U('User/del','',false)}?productid="+productid,
+    type:"GET",
+    dataType:"json",
+    success:function(data)
+    {
+      // console.log(data);
+      if(data.status==1)
+      {
+        $.Showmsg("刪除成功");
+        setTimeout(function()
+          {
+            window.location.href=location.href;
+          },1000);
+      }
+    }
+  });
+}
+
+$(function(){
+  // 增加
+  $('.baseAdd').click(function(){
+    var num=$(this).prev().val();
+    var price=$(this).parent().next().text();
+    var xiaoji=parseInt(num)*parseInt(price);
+    $(this).parent().next().next().val(xiaoji);
+    //計算縂數量
+    var num_=0;
+    $('.baseInput').each(function (k,v){
+        num_+=parseInt($(this).val());
+    });
+    $('#total_num').text(num_);
+    // 修改cookie商品數量
+    var productid=$(this).parent().prev().prev().prev().text();
+    $.ajax({
+      url:"{:U('user/editnum','',false)}",
+      type:"GET",
+      data:{'productid':productid,'num':num},
+      dataType:"json",
+      success:function(data)
+      {
+        if(data.status==1)
+        {
+          window.location.href=location.href;
+        }
+      }
+    });
+    //計算縂價格
+    var total=0;
+    $('.xiaoji').each(function(k,v){
+      total+=parseInt($(this).val());
+    });
+    $('#total').text(total);
+  });
+  // 減少
+  $('.baseReduce').click(function(){
+    var num=$(this).next().val();
+    var price=$(this).parent().next().text();
+    var xiaoji=parseInt(num)*parseInt(price);
+    $(this).parent().next().next().val(xiaoji);
+    // 計算縂數量
+    var n=0;
+    $('.baseInput').each(function(k,v){
+      n+=parseInt($(this).val());
+    });
+    $('#total_num').text(n);
+    // 修改cookie商品數量
+    var productid=$(this).parent().prev().prev().prev().text();
+    $.ajax({
+      url:"{:U('user/editnum','',false)}",
+      type:"GET",
+      data:{'productid':productid,'num':num},
+      dataType:"json",
+      success:function(data)
+      {
+        if(data.status==1)
+        {
+          window.location.href=location.href;
+        }
+      }
+    });
+    // 計算縂價格
+    var total=0;
+    $('.xiaoji').each(function(k,v){
+      total+=parseInt($(this).val());
+    });
+    $('#total').text(total);
+  });
+// 提交訂單
+$(".registerf").Validform({
+    tiptype:1,
+    callback:function(curform){
+              var str='';
+              // 勾選縂價格
+              var total=0;
+              var i=0;
+              $('input[type="checkbox"]:checked').each(function(k,v){
+
+                if($(v).val()=='') return true;
+                var title=$(v).val();
+                var productid=$(v).parent().next().text();
+                var o_num=$(v).parent().parent().find('div').eq(4).find('input').eq(0).val();
+                var o_xiaoji=$(v).parent().parent().find('input').eq(2).val();
+                var pin_str=title+'-'+o_num+'-'+o_xiaoji+'-'+productid;
+                total+=parseInt(o_xiaoji);
+                str+=pin_str+",";
+              });
+              if(str==''||str==null)
+              {
+                $.Showmsg("请您至少选择一项购物车中的商品，谢谢！");
+                  $("#Validform_msg").fadeOut(2000);
+                return false;
+              }
+              $.ajax({
+              url:"{:U('User/createorder','',false)}",
+              type: 'POST',
+              dataType:'json',
+              data:{"data":str,"total":total},
+              success:function(data){
+                console.log(data);
+
+                  if(data.result=='success')
+                  {
+
+                    $.Showmsg("订单提价成功！");
+                      $("#Validform_msg").fadeOut(3500);
+                    setTimeout(function()
+                    {
+
+                     window.open("{:get_category(91,'url')}{:cas_check('http://47.93.225.150/manage/view/index.html#/account/pm-order')}");
+                    },1000);
+
+                  }else if(data.result=='failed')
+                  {
+                    document.cookie="car_login="+"car";
+                    $.Showmsg(data.errorMsg);
+                      $("#Validform_msg").fadeOut(2500);
+                      if(data.code=='1')
+                      {
+                          window.location.href="{:U('User/login')}";
+                      }
+
+                  }
+                }
+              });
+            return false;
+          }
+});
+
+});
+
+</script>

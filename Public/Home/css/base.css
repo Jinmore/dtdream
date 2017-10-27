@@ -1,0 +1,33 @@
+/*2017-07-20*/
+body,ul,li,ol,p,h1,h2,h3,h4,h5,h6,dl,dd,dt,a,span,img,i,b,form,input,label,textarea{margin:0;padding:0;}
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;margin:0; padding:0;}
+body{font-family: "微软雅黑";font-size: 14px;color: #666666;line-height: 23px;}
+a{text-decoration: none;display: block;color: #666666;}
+i{font-style: normal;}
+ul,ol{list-style: none;}
+span{display: block;}
+textarea{resize: none;}
+input,textarea,a{outline: none;border: none;font-family: "微软雅黑";border-radius: 0;font-size: 14px;}
+input:-moz-placeholder{color: #b5b5b5; opacity:1;}
+input::-moz-placeholder{color: #b5b5b5; opacity:1;}
+input:-ms-input-placeholder{color: #b5b5b5; opacity:1;}
+input::-webkit-input-placeholder{color: #b5b5b5; opacity:1;}
+img{border: none;vertical-align: top;}
+table{border:0;margin:0;border-collapse:collapse;}
+table td{padding:0;}
+.clearBoth:after{content: "";display: block;height: 0;*zoom:1;clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{ margin-left:8px;line-height:20px; height:20px;overflow:hidden;color:#999;font-size:12px;position: absolute;left: 525px;top: 12px;}
+.Validform_right{color:#71b83d;padding-left:20px;background:url(../images/right.png) no-repeat left center;position: absolute;left: 567px;top: 35px;}
+.Validform_wrong{color:red;padding-left:20px; white-space:nowrap; background:url(../images/error.png) no-repeat left center;position: absolute;right: 567px;top: 35px;}
+.Validform_loading{padding-left:20px;background:url(../images/onLoad.gif) no-repeat left center;}
+.Validform_error{background-color:#ffe7e7;}
+#Validform_msg{color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:40px; height:40px; text-align:left; font-weight:bold; padding:0 8px; color:#fed602; position:relative; background-color:#000;font-size: 16px;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:20px;border:1px solid #000; border-top:none; text-align:center;font-size: 16px;font-family: "微软雅黑";}
+.Validform_close{background: url("../images/close_03.png") no-repeat 0 0;width: 20px;height: 20px;background-size: cover;margin: 10px 0;}

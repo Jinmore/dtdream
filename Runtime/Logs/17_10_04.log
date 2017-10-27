@@ -1,0 +1,14 @@
+[ 2017-10-04T19:18:52+08:00 ] 37.144.41.228 /Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+

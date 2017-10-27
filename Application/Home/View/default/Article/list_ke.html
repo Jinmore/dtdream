@@ -1,0 +1,42 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <?php $pid=get_category($_GET['catid'],'pid');?>
+            <p class="fl">{:get_category($pid,'title')}</p>
+            <ul class="fr clearBoth">
+              <?php if($pid==53):?>
+              <?php for($i=67;$i<=68;$i++):?>
+                <li <?php if($_GET['catid']==$i) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></li>
+              <?php endfor;?>
+            <?php else:?>
+              <?php for($i=69;$i<=70;$i++):?>
+                <li <?php if($_GET['catid']==$i) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></li>
+              <?php endfor;?>
+            <?php endif;?>
+            </ul>
+        </div>
+        <ul class="yun ke clearBoth">
+          <article:list name="ketang" category="$_GET['catid']" child="true" order="level desc,update_time desc" row="12">
+           <li>
+               <a href="{:U('Article/detail?id='.$ketang['id'].'&catid='.$_GET['catid'])}"><img src="{:get_cover($ketang['cover_id'],$field = path)}"></a>
+               <div class="text">
+                   <a href="{:U('Article/detail?id='.$ketang['id'].'&catid='.$_GET['catid'])}">{$ketang['title']|msubstr=0,8}</a>
+                   {$ketang[description]|msubstr=0,45}
+               </div>
+               <div class="bot clearBoth">
+                   <div class="a2 fl">{$ketang['price']}元起</div>
+                   <a href="{:U('Article/detail?id='.$ketang['id'].'&catid='.$_GET['catid'])}" class="a1 fr">立即选购</a>
+               </div>
+           </li>
+         </article:list>
+        </ul>
+        <div class="page">
+    			<article:page cate="$_GET['catid']" listrow="12" />
+    		</div>
+    </div>
+</div>
+<include file="Public/footer" />

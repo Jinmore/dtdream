@@ -1,0 +1,187 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--main-->
+<div class="main">
+    <div class="inner">
+        <!--帮助-->
+        <ul class="help clearBoth">
+            <li>
+                <a href="#" class="clearBoth">
+                    <img src="__PUBLIC__/Home/images/help_03.jpg" class="fl">
+                    <div class="help-right fl">
+                        <div class="title">帮助咨询</div>
+                        <p>期待帮您解决诉求</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="clearBoth">
+                    <img src="__PUBLIC__/Home/images/help_05.jpg" class="fl">
+                    <div class="help-right fl">
+                        <div class="title">解决方案</div>
+                        <p>期待帮您解决诉求</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="clearBoth">
+                    <img src="__PUBLIC__/Home/images/help_07.jpg" class="fl">
+                    <div class="help-right fl">
+                        <div class="title">服务支持</div>
+                        <p>期待帮您解决诉求</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="clearBoth">
+                    <img src="__PUBLIC__/Home/images/help_09.jpg" class="fl">
+                    <div class="help-right fl">
+                        <div class="title">安全保障</div>
+                        <p>期待帮您解决诉求</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!--优惠-->
+        <div class="discount clearBoth">
+            <div class="left fl">
+                <div class="discount-top">
+                    <div class="title">特惠产品</div>
+                    <div class="title2">限时特惠赶快来抢</div>
+                </div>
+                <img src="__PUBLIC__/Home/images/discount_03.jpg">
+            </div>
+            <ul class="right fr clearBoth">
+              <article:position name="ptop" pos="8" limit="4"  cate="'55,56,57,58,59,60,61,62,63,64,65,66'" >
+              <li>
+                  <a href="{:U('Article/detail?id='.$ptop['id'].'&catid='.$ptop['category_id'])}" class="title">{$ptop['title']|msubstr=0,8}</a>
+                  <div class="text">
+                      {$ptop['description']}
+                  </div>
+                  <div  class="new-a2" >{$ptop['price']}元起</div>
+                  <div class="bot clearBoth">
+                      <a href="{$ptop['ljxg']}" class="a2 fr" target="_blank">立即选购</a>
+                  </div>
+                  <img src="__PUBLIC__/Home/images/te_03.png" class="te">
+              </li>
+              </article:position>
+
+            </ul>
+        </div>
+        <!--云产品-->
+        <div class="baseTitle">
+            <div class="baseTxt clearBoth">
+                <img src="__PUBLIC__/Home/images/yun_03.jpg" class="fl">
+                <h3 class="fl">云产品</h3>
+            </div>
+        </div>
+        <ul class="yun clearBoth">
+          <article:position name="ptop2" pos="16" limit="14" cate="'55,56,57,58,59,60,61,62,63,64,65,66,67,68'" >
+
+            <li>
+                <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}"><img src="{:get_cover($ptop2['cover_id'],$field = path)}"></a>
+                <div class="text">
+                    <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}">{$ptop2['title']|msubstr=0,8}</a>
+                      {$ptop2['description']|msubstr=0,45}
+                </div>
+                <div class="bot clearBoth">
+                  <div class="a2 fl">{$ptop2['price']}元起</div>
+                  <a href="{$ptop2['ljxg']}" class="a1 fr" target="_blank">立即选购</a>
+                </div>
+            </li>
+         </article:position>
+            <li class="last"><a href="{:U('Article/index',array('category'=>get_category(76,'name'),'catid'=>76))}"><img src="{:get_cover((get_category(76,'icon')),$field = path)}"></a></li>
+        </ul>
+        <div class="baseTitle">
+            <div class="baseTxt clearBoth">
+                <img src="__PUBLIC__/Home/images/yun2_03.jpg" class="fl">
+                <h3 class="fl">培训课程</h3>
+            </div>
+        </div>
+        <!--培训课程-->
+        <ul class="yun ke clearBoth">
+          <article:position name="ptop2" pos="4" limit="5" cate="'67,68'" >
+
+            <li>
+                <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}"><img src="{:get_cover($ptop2['cover_id'],$field = path)}"></a>
+                <div class="text">
+                    <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}">{$ptop2['title']|msubstr=0,8}</a>
+                    {$ptop2['description']|msubstr=0,45}
+                </div>
+                <div class="bot clearBoth">
+                  <div class="a2 fl">{$ptop2['price']}元起</div>
+                    <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}" class="a1 fr" target="_blank">立即选购</a>
+                </div>
+            </li>
+            </article:position>
+
+            <li class="last"><a href="{:U('Article/index',array('category'=>get_category(75,'name'),'catid'=>75))}"><img src="{:get_cover((get_category(75,'icon')),$field = path)}"></a></li>
+        </ul>
+        <div class="baseTitle">
+            <div class="baseTxt clearBoth">
+                <img src="__PUBLIC__/Home/images/re_11.jpg" class="fl">
+                <h3 class="fl">认证考试</h3>
+            </div>
+        </div>
+        <ul class="yun ke clearBoth">
+            <article:position name="ptop2" pos="4" limit="4" cate="'69,70'" >
+            <li>
+                <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}"><img src="{:get_cover($ptop2['cover_id'],$field = path)}"></a>
+                <div class="text">
+                    <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}">{$ptop2['title']|msubstr=0,8}</a>
+                    {$ptop2['description']|msubstr=0,45}
+                </div>
+                <div class="bot clearBoth">
+                    <div class="a2 fl">{$ptop2['price']}元起</div>
+                    <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid='.$ptop2['category_id'])}" class="a1 fr" target="_blank">立即选购</a>
+                </div>
+            </li>
+              </article:position>
+        </ul>
+        <!--头条-->
+        <div class="top-line clearBoth">
+            <div class="left fl">
+                <div class="baseTop clearBoth">
+                    <div class="line fl"></div>
+                    <div class="title fl">头条</div>
+                    <a href="{:U('Article/index',array('category'=>get_category(72,'name'),'catid'=>72))}" class="more fr">更多>></a>
+                </div>
+                <ul class="topLineUl">
+                  <article:position name="ptop2" pos="4" limit="2" cate="'72'" order="level desc,update_time desc">
+                    <li class="clearBoth">
+                        <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid=72')}" class="left fl"><img src="{:get_cover($ptop2['cover_id'],$field = path)}"></a>
+                        <div class="li-right fl">
+                            <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid=72')}" class="title">{$ptop2['title']}</a>
+                            <div class="text">
+                              {$ptop2['description']}
+                                <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid=72')}" class="xi">【详细】</a>
+                            </div>
+                        </div>
+                    </li>
+                    </article:position>
+
+                </ul>
+            </div>
+            <div class="right fr">
+                <div class="baseTop clearBoth">
+                    <div class="line fl"></div>
+                    <div class="title fl">公告</div>
+                    <a href="{:U('Article/index',array('category'=>get_category(73,'name'),'catid'=>73))}" class="more fr">更多>></a>
+                </div>
+                <ul class="teaUl">
+                  <article:position name="ptop2" pos="4" limit="3" cate="'73'" >
+                    <li>
+                        <div class="teach clearBoth">
+                            <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid=73')}" class="a1 fl">{$ptop2['biaoqian']}</a>
+                            <a href="{:U('Article/detail?id='.$ptop2['id'].'&catid=73')}" class="a2 fl">{$ptop2['title']}</a>
+                        </div>
+                        <p>  {$ptop2['description']|msubstr=0,30}</p>
+                    </li>
+                    </article:position>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" />

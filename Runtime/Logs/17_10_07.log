@@ -1,0 +1,56 @@
+[ 2017-10-07T03:54:51+08:00 ] 178.140.54.31 /Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.095831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.012308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.008550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008609s ]
+
+[ 2017-10-07T03:54:51+08:00 ] 89.179.106.31 /Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.012287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.008548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008604s ]
+
+[ 2017-10-07T13:19:25+08:00 ] 109.63.249.31 /Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.132418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.012739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010296s ]
+
+[ 2017-10-07T23:23:26+08:00 ] 37.204.201.123 /Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+

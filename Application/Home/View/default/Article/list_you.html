@@ -1,0 +1,80 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--main-->
+<div class="main">
+    <div class="inner">
+        <!--云产品-->
+        <div class="baseTitle">
+            <div class="baseTxt baseTxt-you clearBoth">
+                <img src="__PUBLIC__/Home/images/you1_03.jpg" class="fl">
+                <h3 class="fl">培训课程和认证考试</h3>
+            </div>
+        </div>
+        <ul class="yun yun-you clearBoth">
+          <article:list name="list" category="97" child="true" order="level desc" row="8">
+            <li>
+              <?php
+               $strtime=date('Y-m-d',$list['deadline']);
+               $endtime=intval($list['deadline'])-time();
+               $endday=floor($endtime/86400);
+               $endhour=floor(($endtime-($endday*86400))/3600);
+
+               ?>
+
+              <input type="hidden" class="strtime" value="{$strtime}">
+                <div class="time">倒计时
+                    <span class="day">{$endday}</span> 天
+                    <span class="hour">{$endhour}</span> 时
+                </div>
+                <a href="{:U('Article/detail?id='.$list['id'].'&catid=42')}" class="you-a">{$list['title']|msubstr=0,7}</a>
+                <div class="txt">{$list['description']|msubstr=0,47}</div>
+                <a href="{:U('Article/detail?id='.$list['id'].'&catid=42')}"><img width="106" height="99" src="{:get_cover($list['cover_id'],$field = path)}"></a>
+                <div class="bot">
+                    <div class="bot-box clearBoth">
+                        <a href="{$list['ljxg']}" class="a1 fl">立即选购</a>
+                        <div class="a2 fl">{$list['price']}元起</div>
+                    </div>
+                </div>
+            </li>
+            </article:list>
+        </ul>
+        <div class="baseTitle">
+            <div class="baseTxt clearBoth">
+                <img src="__PUBLIC__/Home/images/yun_03.jpg" class="fl">
+                <h3 class="fl">云产品</h3>
+            </div>
+        </div>
+        <!--培训课程-->
+        <ul class="yun yun-you clearBoth">
+          <article:list name="list" category="98" child="false" order="level desc,update_time desc" row="8">
+
+            <li>
+              <?php
+               $strtime=date('Y-m-d',$list['deadline']);
+               $endtime=intval($list['deadline'])-time();
+               $endday=floor($endtime/86400);
+               $endhour=floor(($endtime-($endday*86400))/3600);
+
+               ?>
+                <div class="time">倒计时
+                    <span class="day">{$endday}</span> 天
+                    <span class="hour">{$endhour}</span> 时
+                </div>
+                <a href="{:U('Article/detail?id='.$list['id'].'&catid=42')}" class="you-a">{$list['title']|msubstr=0,7}</a>
+                <div class="txt">{$list['description']|msubstr=0,47}</div>
+                <a href="{:U('Article/detail?id='.$list['id'].'&catid=42')}"><img width="106" height="99" src="{:get_cover($list['cover_id'],$field = path)}"></a>
+                <div class="bot">
+
+                    <div class="bot-box clearBoth">
+                      <a href="{$list['ljxg']}" class="a1 fl">立即选购</a>
+                      <div class="a2 fl">{$list['price']}元起</div>
+                    </div>
+                </div>
+            </li>
+          </article:list>
+
+
+        </ul>
+    </div>
+</div>
+<include file="Public/footer" />

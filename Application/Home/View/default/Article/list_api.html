@@ -1,0 +1,29 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <p class="fl">{:get_category($_GET['catid'],'title')}</p>
+            <ul class="fr clearBoth">
+                <li <?php if($_GET['catid']==83) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category(83,'name'),'catid'=>83))}">{:get_category(83,'title')}</a></li>
+                <li <?php if($_GET['catid']==84) echo "class='bg'";?>><a href="{:U('Article/index',array('category'=>get_category(84,'name'),'catid'=>84))}">{:get_category(84,'title')}</a></li>
+                <li <?php if($_GET['catid']==85) echo "class='bg'";?>><a href="{:U('Article/index',array('category'=>get_category(85,'name'),'catid'=>85))}">{:get_category(85,'title')}</a></li>
+            </ul>
+        </div>
+        <ul class="gao">
+         <article:list name="article" category="$_GET['catid']" child="true" order="level desc,update_time desc" row="3">
+            <li class="clearBoth">
+                <a href="{:U('Article/detail?id='.$article['id'].'&catid='.$_GET['catid'])}" class="fl">{$article['title']}</a>
+                <div class="time fr">{$article.create_time|date='Y-m-d',###}</div>
+            </li>
+          </article:list>
+
+        </ul>
+        <div class="page">
+					 <article:page cate="$_GET['catid']" listrow="3" />
+				</div>
+    </div>
+</div>
+<include file="Public/footer" />

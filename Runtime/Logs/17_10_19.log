@@ -1,0 +1,849 @@
+[ 2017-10-19T14:35:57+08:00 ] 60.12.1.129 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.031868s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.037173s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) ORDER BY `level` DESC  [ RunTime:0.001392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.021383s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000348s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000393s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.023939s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000321s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000693s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000698s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000169s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000327s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000315s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000159s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508394956 ) AND ( deadline = 0 OR deadline > 1508394956 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.559289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.559353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.013845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.008701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008765s ]
+
+[ 2017-10-19T15:05:06+08:00 ] 60.12.1.129 /Article/index/category/youhui/catid/42/ccid/2.html
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.013582s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `name` = 'youhui' ) LIMIT 1   [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.013330s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000303s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.009667s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508396705 ) AND ( deadline = 0 OR deadline > 1508396705 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000496s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.011278s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000224s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 97 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000414s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 97 ) AND ( `create_time` < 1508396705 ) AND ( deadline = 0 OR deadline > 1508396705 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.000342s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 98 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000347s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 98 ) AND ( `create_time` < 1508396705 ) AND ( deadline = 0 OR deadline > 1508396705 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,8   [ RunTime:0.000325s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 245 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 65 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\18b5781c22cbcb7769209ded7c4c1a39.php 第 245 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 65 ) LIMIT 1   [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.247474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.247545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-10-19T15:05:17+08:00 ] 60.12.1.129 /Article/index/category/shangpin/catid/44/ccid/4.html
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.009537s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `name` = 'shangpin' ) LIMIT 1   [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.009657s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000283s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.008918s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508396717 ) AND ( deadline = 0 OR deadline > 1508396717 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000424s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.008419s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000223s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000267s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000194s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000183s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 44 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000365s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 44 ) AND ( `create_time` < 1508396717 ) AND ( deadline = 0 OR deadline > 1508396717 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000381s ]
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant catid - assumed 'catid' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\9a9e4227b3c0b552fe0f4e7e528d8737.php 第 207 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 44 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000342s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 44 ) AND ( `create_time` < 1508396717 ) AND ( deadline = 0 OR deadline > 1508396717 ) LIMIT 1   [ RunTime:0.000377s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.250771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.250839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-10-19T15:05:22+08:00 ] 60.12.1.129 /Article/index/category/jiameng/catid/46/ccid/6.html
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.009341s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `name` = 'jiameng' ) LIMIT 1   [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.006632s ]
+SQL: SELECT * FROM `o_category` WHERE ( `id` = 46 ) LIMIT 1   [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.011610s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000310s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.010533s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508396722 ) AND ( deadline = 0 OR deadline > 1508396722 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.008898s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000194s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000196s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [2] Illegal string offset 'title' E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 203 行.
+NOTIC: [8] Undefined variable: info E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 208 行.
+NOTIC: [8] Undefined variable: info E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 209 行.
+NOTIC: [8] Undefined variable: info E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 209 行.
+NOTIC: [8] Undefined variable: info E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 215 行.
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `id` < null ) AND ( `pid` = 0 ) AND ( `category_id` = null ) AND ( `status` = 1 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: info E:\web\Runtime\Cache\Home\5231e2bbdb7b9edc1f0f29f2bbab2a6e.php 第 216 行.
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `id` > null ) AND ( `pid` = 0 ) AND ( `category_id` = null ) AND ( `status` = 1 ) ORDER BY id LIMIT 1   [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.220869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-10-19T15:12:30+08:00 ] 60.12.1.129 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.008971s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.008458s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) ORDER BY `level` DESC  [ RunTime:0.001172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.009343s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000359s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000412s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.009238s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000231s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000686s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000727s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000170s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000183s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000349s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000345s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508397150 ) AND ( deadline = 0 OR deadline > 1508397150 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.309686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.309761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-10-19T15:18:41+08:00 ] 183.131.17.228 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.009208s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.009386s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) ORDER BY `level` DESC  [ RunTime:0.001209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.015906s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000368s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000402s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.011909s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000299s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000924s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000807s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000155s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000435s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000457s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508397520 ) AND ( deadline = 0 OR deadline > 1508397520 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.365059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.365132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-10-19T15:19:22+08:00 ] 60.12.1.129 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.010366s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.010131s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) ORDER BY `level` DESC  [ RunTime:0.001281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.012213s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000334s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000469s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.008793s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000209s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000807s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000801s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000184s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000170s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000405s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000206s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000357s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000279s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000353s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000198s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508397561 ) AND ( deadline = 0 OR deadline > 1508397561 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.302699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.302764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-10-19T15:19:33+08:00 ] 60.12.1.129 /Article/detail/id/13/catid/58.html
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.009774s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `o_document_article` [ RunTime:0.092992s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark`,`product` FROM `o_document_article` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.011597s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 58 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: UPDATE `o_document` SET `view`=view+1 WHERE ( `id` = 13 ) [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.009844s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000344s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397573 ) AND ( deadline = 0 OR deadline > 1508397573 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000382s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.009630s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000242s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000228s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000231s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000210s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000238s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.190536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-10-19T15:19:34+08:00 ] 221.12.17.86 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.016322s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.009421s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) ORDER BY `level` DESC  [ RunTime:0.001240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.010720s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000292s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000337s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000382s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.012763s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000242s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000704s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000702s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000159s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000361s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000225s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000386s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000389s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508397574 ) AND ( deadline = 0 OR deadline > 1508397574 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.329908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.329975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-10-19T15:20:32+08:00 ] 60.12.1.129 /
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.012867s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.012186s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) ORDER BY `level` DESC  [ RunTime:0.002077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8] Undefined index: catid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.011720s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000380s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000415s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.011486s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000240s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66') ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 8 = 8 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000765s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('55','56','57','58','59','60','61','62','63','64','65','66','67','68') ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 16 = 16 ) ORDER BY level desc LIMIT 14   [ RunTime:0.000745s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 31 ) LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 29 ) LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 32 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 30 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 33 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 34 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 35 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 36 ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 37 ) LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 272 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 38 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 282 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 27 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('67','68') ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 5   [ RunTime:0.000400s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 48 ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 40 ) LIMIT 1   [ RunTime:0.000207s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 43 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 42 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 293 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 41 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 304 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 26 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('69','70') ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 4   [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 47 ) LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 46 ) LIMIT 1   [ RunTime:0.000228s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 45 ) LIMIT 1   [ RunTime:0.000187s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 314 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 44 ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 72 ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 2   [ RunTime:0.000389s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 335 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 3 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 73 ) AND ( `create_time` < 1508397632 ) AND ( deadline = 0 OR deadline > 1508397632 ) AND ( position & 4 = 4 ) ORDER BY level desc LIMIT 3   [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.344377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.344471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-10-19T15:21:25+08:00 ] 60.12.1.129 /Article/detail/id/13/catid/58.html
+SQL: SHOW COLUMNS FROM `o_document` [ RunTime:0.013619s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `o_document_article` [ RunTime:0.012157s ]
+SQL: SELECT `id`,`parse`,`content`,`template`,`bookmark`,`product` FROM `o_document_article` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `o_category` [ RunTime:0.011318s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 58 ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: UPDATE `o_document` SET `view`=view+1 WHERE ( `id` = 13 ) [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+NOTIC: [8] Undefined index: url E:\web\Application\Common\Common\function.php 第 531 行.
+SQL: SHOW COLUMNS FROM `o_channel` [ RunTime:0.009621s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `o_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+NOTIC: [8] Undefined index: ccid E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 78 行.
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_page`,`template_lists`,`template_detail`,`template_edit`,`is_page`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`content`,`urll` FROM `o_category` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id`,`is_page`,`display` FROM `o_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000343s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status`,`biaoqian`,`ljxg`,`xptj`,`price` FROM `o_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 40 ) AND ( `create_time` < 1508397685 ) AND ( deadline = 0 OR deadline > 1508397685 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SHOW COLUMNS FROM `o_picture` [ RunTime:0.009476s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 63 ) LIMIT 1   [ RunTime:0.000224s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 64 ) LIMIT 1   [ RunTime:0.000183s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 54 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 55 ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 56 ) LIMIT 1   [ RunTime:0.000161s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 58 ) LIMIT 1   [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant path - assumed 'path' E:\web\Runtime\Cache\Home\4be215753fa2965074e21343359bee6e.php 第 90 行.
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 61 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `o_picture` WHERE ( `status` = 1 ) AND ( `id` = 4 ) LIMIT 1   [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.184963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+

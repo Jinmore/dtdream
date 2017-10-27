@@ -1,0 +1,30 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <p class="fl">{:get_category($_GET['catid'],'title')}</p>
+            <!-- <p class="fl">{$category.title}</p> -->
+
+
+        </div>
+        <!-- <div class="news-content">
+            <div class="title">{$info.title}</div>
+            <p>发布时间：{$info.create_time|date='Y-m-d',###}<span>来源：数梦工场</span>浏览：{$info.view}</p>
+        </div> -->
+        <div class="news-con">
+        {:get_category($_GET['catid'],'content')}
+        </div>
+        <!-- <div class="pre clearBoth">
+          <article:prev name="prev" info="info">
+              <p class="fl">上一篇：<a href="{:U('?id='.$prev['id'])}">{$prev['title']}</a></p>
+              </article:prev>
+              <article:next name="next" info="info">
+              <p class="fr">下一篇：<a href="{:U('?id='.$next['id'])}">{$next['title']}</a></p>
+              </article:next>
+        </div> -->
+    </div>
+</div>
+<include file="Public/footer" />

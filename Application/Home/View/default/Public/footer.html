@@ -1,0 +1,74 @@
+<div class="footer">
+    <div class="inner clearBoth">
+        <dl>
+            <dt>产品服务</dt>
+            <dd><a href="{:U('Article/detail?id=11'.'&catid=55')}">{:get_category(48,'title')}</a></dd>
+            <dd><a href="{:U('Article/detail?id=12'.'&catid=57')}">{:get_category(49,'title')}</a></dd>
+            <dd><a href="{:U('Article/detail?id=16'.'&catid=61')}">{:get_category(50,'title')}</a></dd>
+            <dd><a href="{:U('Article/detail?id=17'.'&catid=62')}">{:get_category(51,'title')}</a></dd>
+            <dd><a href="{:U('Article/detail?id=21'.'&catid=63')}">{:get_category(52,'title')}</a></dd>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(67,'name'),'catid'=>67))}">{:get_category(53,'title')}</a></dd>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(69,'name'),'catid'=>69))}">{:get_category(54,'title')}</a></dd>
+        </dl>
+        <dl>
+            <dt>解决方案</dt>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(79,'name'),'catid'=>79))}">{:get_category(79,'title')}</a></dd>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(80,'name'),'catid'=>80))}">{:get_category(80,'title')}</a></dd>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(81,'name'),'catid'=>81))}">{:get_category(81,'title')}</a></dd>
+        </dl>
+        <dl>
+            <dt>服务支持</dt>
+            <?php for($i=83;$i<=85;$i++):?>
+            <dd><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></dd>
+           <?php endfor;?>
+        </dl>
+        <dl>
+            <dt>新闻动态</dt>
+            <?php for($i=87;$i<=89;$i++):?>
+            <dd><a href="{:U('Article/index',array('category'=>get_category($i,'name'),'catid'=>$i))}">{:get_category($i,'title')}</a></dd>
+           <?php endfor;?>
+        </dl>
+        <dl>
+            <dt>联系我们</dt>
+            <dd><a href="{:U('Article/index',array('category'=>get_category(90,'name'),'catid'=>90))}">{:get_category(90,'title')}</a></dd>
+            <dd>400-600-1818</dd>
+            <dd>365天无休服务 24小时在线</dd>
+        </dl>
+    </div>
+</div>
+<div class="copy">
+    <div class="inner">Copyright © 2017 云服务器(www.baidu.com) All Rights Reserved {:C('WEB_SITE_ICP')}</div>
+</div>
+<div id="test">
+    <ul>
+        <li class="li1">
+            <a href="tencent://message/?uin={:C('WEB_ON_LINE')}&在线咨询&Menu=yes">
+                <div class="icon"></div>
+                <p>在线客服</p>
+            </a>
+        </li>
+        <li class="line"></li>
+        <li class="li2">
+            <a href="{:U('user/car')}">
+                <div class="icon"></div>
+                <p>购物车</p>
+            </a>
+        </li>
+        <li class="line"></li>
+        <li class="li3">
+            <a href="">
+                <div class="icon"></div>
+                <p>问题反馈</p>
+            </a>
+        </li>
+        <li class="line"></li>
+        <li class="li4">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <p>返回顶部</p>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

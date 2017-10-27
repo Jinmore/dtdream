@@ -1,0 +1,36 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <p class="fl">开发者课堂</p>
+            <!-- <ul class="fr clearBoth">
+                <li class="bg"><a href="">云计算课程</a></li>
+                <li><a href="">大数据课程</a></li>
+            </ul> -->
+        </div>
+        <ul class="yun ke clearBoth">
+           <article:list name="ketang" category="75" child="true" order="level desc,update_time desc" row="12">
+            <li>
+                <a href="{:U('Article/detail?id='.$ketang['id'].'&catid=75')}"><img src="{:get_cover($ketang['cover_id'],$field = path)}"></a>
+                <div class="text">
+                    <a href="{:U('Article/detail?id='.$ketang['id'].'&catid=75')}">{$ketang['title']}</a>
+                    {$ketang[description]|msubstr=0,45}
+                </div>
+                <div class="bot clearBoth">
+                    <div class="a2 fl">{$ketang['price']}元起</div>
+                    <a href="{:U('Article/detail?id='.$ketang['id'].'&catid=75')}" class="a1 fr">立即选购</a>
+                </div>
+            </li>
+          </article:list>
+
+
+        </ul>
+        <div class="page">
+    			<article:page cate="$_GET['catid']" listrow="12" />
+    		</div>
+    </div>
+</div>
+<include file="Public/footer" />

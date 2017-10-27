@@ -1,0 +1,31 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+        <div class="base-line clearBoth">
+            <div class="box fl"></div>
+            <!-- <p class="fl">头条</p> -->
+            <p class="fl">{:get_category($_GET['catid'],'title')}</p>
+        </div>
+        <ul class="newsUl">
+          <article:list name="list" category="$_GET['catid']" child="true" order="level desc,update_time desc" row="10">
+            <li class="clearBoth">
+                <a href="{:U('Article/detail?id='.$list['id'].'&catid='.$_GET[catid])}" class="left fl"><img src="{:get_cover($list['cover_id'],$field = path)}"></a>
+                <div class="right fl">
+                    <a href="{:U('Article/detail?id='.$list['id'].'&catid='.$_GET['catid'])}" class="title">{$list['title']}</a>
+                    <p>{$list.create_time|date='Y-m-d',###}</p>
+                    <div class="text">
+                      {$list['description']}<a href="{:U('Article/detail?id='.$list['id'].'&catid='.$_GET['catid'])}">[详细]</a>
+                    </div>
+                </div>
+            </li>
+</article:list>
+
+        </ul>
+        <div class="page">
+    			<article:page cate="$_GET['catid']" listrow="10" />
+    		</div>
+    </div>
+</div>
+<include file="Public/footer" />

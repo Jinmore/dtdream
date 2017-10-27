@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php $str=get_category($_GET['catid'],'title'); if(!empty($str)) echo $str.' - '; ?>{:C('WEB_SITE_TITLE')}</title>
+    <meta name="keywords" content="{:C('WEB_SITE_KEYWORD')}">
+    <meta name="description" content="{:C('WEB_SITE_DESCRIPTION')}">
+    <link href="__PUBLIC__/Home/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/css/base.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Home/css/index.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/Home/js/jquery-1.8.2.min.js"></script>
+    <script src="__PUBLIC__/Home/js/swiper.min.js"></script>
+    <script src="__PUBLIC__/Home/js/Validform_v5.3.2_min.js"></script>
+    <script src="__PUBLIC__/Home/js/time.min.js"></script>
+    <script src="__PUBLIC__/Home/js/base.js"></script>
+
+</head>
+<body>
+<!--top/header/list-->
+<div class="top clearBoth">
+  <div class="inner">
+
+
+    <if condition="!empty($user_name)">
+        &nbsp;&nbsp;欢迎您：{$user_name} <a href="{:U('User/logout')}" class="sign fl">退出</a>
+    <else/>
+    <a href="{:U('User/login')}" class="sign fl" style="margin-right:20px;">亲，请登录</a>
+    <a href="{:U('User/register')}" class="sign fl">我要注册</a>
+    </if>
+    <ul class="fr clearBoth">
+        <li><a href="{:get_category(91,'url')}{:cas_check('http://47.93.225.150/manage/view/index.html#/account/pm-order')}" target="_blank">我的订单</a></li>
+        <li><a href="{:get_category(92,'url')}{:cas_check('http://47.93.225.150/manage')}" target="_blank">我的数梦</a></li>
+        <li><a href="{:U('Article/index',array('category'=>get_category(93,'name'),'catid'=>93))}">客服中心</a></li>
+        <li><a href="{:U('Article/index',array('category'=>get_category(94,'name'),'catid'=>94))}">合作服务</a></li>
+        <li><a href="{:U('Article/index',array('category'=>get_category(95,'name'),'catid'=>95))}">规则中心</a></li>
+        <li><a href="{:U('Article/index',array('category'=>get_category(96,'name'),'catid'=>96))}">关于我们</a></li>
+    </ul>
+    </div>
+</div>
+<div class="inner">
+
+    <div class="header">
+        <a href="" class="logo fl"><img src="__PUBLIC__/Home/images/logo_03.png"></a>
+        <!-- <form class="registerform fl clearBoth"  name="search_form" url="{:U('Article/lists',array('category'=>get_category(82,'name')),true,true)}">
+            <input type="text" placeholder="请输入关键字" name="keyword" id="keyword" class="fl" datatype="*" nullmsg="请输入搜索内容" value="{:I('keyword')}">
+            <input type="button" class="fl" id="button" value="">
+        </form> -->
+        <form class="registerform11 fl clearBoth"  name="search_form" method="get" >
+            <input type="text" placeholder="请输入关键字" name="keyword" id="keyword" class="fl" datatype="*" nullmsg="请输入搜索内容" value="{:I('keyword')}">
+            <input type="submit" class="fl"  value="">
+        </form>
+        <a href="{:U('user/car')}" class="shop fl"><img src="__PUBLIC__/Home/images/shop_03.png"><span><?php if(cookie('num')) echo cookie('num');else echo 0;?></span></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+ $(function(){
+   $(".registerform11").Validform({
+       tiptype:1
+    });
+
+$("#keyword").blur(function(){
+    var action="{:U('Article/lists',array('category'=>get_category(82,'name')),"",false)}"+"/keyword/"+$(this).val();
+   $(".registerform11").attr("action",action);
+});
+$("#keyword").keydown(function(){
+  var action="{:U('Article/lists',array('category'=>get_category(82,'name')),"",false)}"+"/keyword/"+$(this).val();
+ $(".registerform11").attr("action",action);
+});
+
+ })
+</script>

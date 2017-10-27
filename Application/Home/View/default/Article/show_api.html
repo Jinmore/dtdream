@@ -1,0 +1,32 @@
+<include file="Public/top" />
+<include file="Public/header" />
+<!--news-main-->
+<div class="news-main">
+    <div class="inner">
+      <div class="base-line clearBoth">
+          <div class="box fl"></div>
+          <p class="fl">{:get_category($_GET['catid'],'title')}</p>
+          <ul class="fr clearBoth">
+              <li <?php if($_GET['catid']==83) echo "class='bg'";?> ><a href="{:U('Article/index',array('category'=>get_category(83,'name'),'catid'=>83))}">{:get_category(83,'title')}</a></li>
+              <li <?php if($_GET['catid']==84) echo "class='bg'";?>><a href="{:U('Article/index',array('category'=>get_category(84,'name'),'catid'=>84))}">{:get_category(84,'title')}</a></li>
+              <li <?php if($_GET['catid']==85) echo "class='bg'";?>><a href="{:U('Article/index',array('category'=>get_category(85,'name'),'catid'=>85))}">{:get_category(85,'title')}</a></li>
+          </ul>
+      </div>
+        <div class="news-content">
+            <div class="title">{$info['title']}</div>
+            <p>发布时间：{$info.create_time|date='Y-m-d',###}<span>来源：数梦工场</span>浏览：{$info.view}次</p>
+        </div>
+        <div class="news-con">
+          {$info['content']}
+        </div>
+        <div class="pre clearBoth">
+          <article:next name="prev" info="info">
+          <p class="fl">上一篇：<a href="{:U('?id='.$prev['id'].'&catid='.$_GET['catid'])}">{$prev['title']}</a></p>
+          </article:next>
+          <article:prev name="next" info="info">
+          <p class="fr">下一篇：<a href="{:U('?id='.$next['id'].'&catid='.$_GET['catid'])}">{$next['title']}</a></p>
+          </article:prev>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" />
